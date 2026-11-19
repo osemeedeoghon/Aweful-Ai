@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awful AI: scary real-world uses of AI</title>
+  <meta name="description" content="Awful AI is a curated list of current, real-world misuses of artificial intelligence: discrimination, disinformation, surveillance, data crimes, social credit, scams, climate harm and military use, plus the research and tools fighting back.">
+  <meta property="og:title" content="Awful AI">
+  <meta property="og:description" content="A curated list tracking scary real-world uses of AI, to raise awareness of its misuse in society.">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b3261e'/%3E%3Cpath d='M16 7 26 25H6Z' fill='none' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpath d='M16 14v5' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='22' r='1.4' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">A curated awareness list</p>
+      <h1>Awful AI</h1>
+      <p class="lede">A list tracking <em>current</em>, real-world uses of artificial intelligence that cause harm, from biased hiring tools and predictive policing to deepfakes, mass surveillance and autonomous weapons.</p>
+      <div class="hero__body">
+        <p>AI in its current state is <a href="https://github.com/rockita/criticalML" target="_blank" rel="noopener noreferrer">unfair<span class="sr-only"> (opens in a new tab)</span></a>, <a href="http://www.cleverhans.io/security/privacy/ml/2016/12/16/breaking-things-is-easy.html" target="_blank" rel="noopener noreferrer">easily attacked<span class="sr-only"> (opens in a new tab)</span></a> and notoriously difficult to control. Its predictions often <a href="https://twitter.com/kaiwei_chang/status/1274845029933084673" target="_blank" rel="noopener noreferrer">amplify existing systemic biases<span class="sr-only"> (opens in a new tab)</span></a>, even when the data is balanced. Yet concerning uses keep appearing in the wild.</p>
+        <p>This list documents them, so that people can recognise the patterns, talk about them, and build the tools and policies to push back.</p>
+      </div>
+      <dl class="stats">
+        <div><dt>Documented cases</dt><dd>61</dd></div>
+        <div><dt>Categories</dt><dd>8</dd></div>
+        <div><dt>Efforts fighting back</dt><dd>16</dd></div>
+        <div><dt>Linked sources</dt><dd>168</dd></div>
+      </dl>
+      <p class="hero__actions">
+        <a class="btn btn--primary" href="#categories">Read the list</a>
+        <a class="btn" href="#fighting-back">See who is fighting back</a>
+        <a class="btn" href="#cite">Cite this list</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="layout wrap">
+    <nav class="toc" aria-label="Table of contents">
+      <details class="toc__mobile" open>
+        <summary>Contents</summary>
+        <div class="toc__inner">
+          <p class="toc__group">1 · Awful AI</p>
+          <ol><li><a href="#discrimination" data-toc="discrimination"><span class="toc__num">1.1</span><span class="toc__title">Discrimination</span><span class="toc__count" data-toc-count="discrimination">26</span></a></li><li><a href="#disinformation" data-toc="disinformation"><span class="toc__num">1.2</span><span class="toc__title">Influencing, Disinformation &amp; Fakes</span><span class="toc__count" data-toc-count="disinformation">9</span></a></li><li><a href="#surveillance" data-toc="surveillance"><span class="toc__num">1.3</span><span class="toc__title">Surveillance</span><span class="toc__count" data-toc-count="surveillance">8</span></a></li><li><a href="#data-crimes" data-toc="data-crimes"><span class="toc__num">1.4</span><span class="toc__title">Data Crimes</span><span class="toc__count" data-toc-count="data-crimes">3</span></a></li><li><a href="#social-credit" data-toc="social-credit"><span class="toc__num">1.5</span><span class="toc__title">Social Credit Systems</span><span class="toc__count" data-toc-count="social-credit">2</span></a></li><li><a href="#scams" data-toc="scams"><span class="toc__num">1.6</span><span class="toc__title">Misleading Platforms &amp; Scams</span><span class="toc__count" data-toc-count="scams">2</span></a></li><li><a href="#climate" data-toc="climate"><span class="toc__num">1.7</span><span class="toc__title">Accelerating the Climate Emergency</span><span class="toc__count" data-toc-count="climate">3</span></a></li><li><a href="#military" data-toc="military"><span class="toc__num">1.8</span><span class="toc__title">Autonomous Weapons &amp; Military</span><span class="toc__count" data-toc-count="military">8</span></a></li></ol>
+          <p class="toc__group toc__group--counter">2 · Fighting back</p>
+          <ol><li><a href="#contestational-research" data-toc="contestational-research"><span class="toc__num">2.1</span><span class="toc__title">Contestational Research</span><span class="toc__count" data-toc-count="contestational-research">6</span></a></li><li><a href="#contestational-tech" data-toc="contestational-tech"><span class="toc__num">2.2</span><span class="toc__title">Contestational Tech Projects</span><span class="toc__count" data-toc-count="contestational-tech">10</span></a></li></ol>
+          <p class="toc__group">3 · More</p>
+          <ol>
+            <li><a href="#award" data-toc="award"><span class="toc__num">3.1</span><span class="toc__title">Annual Awful AI Award</span></a></li>
+            <li><a href="#cite" data-toc="cite"><span class="toc__num">3.2</span><span class="toc__title">Cite &amp; contribute</span></a></li>
+          </ol>
+        </div>
+      </details>
+    </nav>
+
+    <main id="main">
+      <div class="toolbar" data-toolbar hidden>
+        <label class="search">
+          <span class="sr-only">Search the list</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search cases, companies, sources…" autocomplete="off" data-search>
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <button type="button" class="btn btn--small" data-toggle-all aria-pressed="false">Expand all</button>
+        <p class="toolbar__status" role="status" aria-live="polite" data-status></p>
+      </div>
+
+      <section id="categories" class="part" aria-labelledby="categories-title">
+        <h2 id="categories-title" class="part__title"><span>1</span> Awful AI categories</h2>
+        
+      <section class="category category--awful" id="discrimination" aria-labelledby="discrimination-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.1</p>
+          <h3 id="discrimination-title">Discrimination</h3>
+          <p class="category__intro">This category highlights AI applications that have raised concerns due to their potential for discrimination, ranging from racial and gender biases to unethical uses in law enforcement.</p>
+          <p class="category__count"><span data-count>26</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="discrimination--dermatology-app">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--dermatology-app" aria-label="Link to Dermatology App">#</a>Dermatology App</h4>
+          <p class="entry__summary">Google's dermatology app, not fully effective for people with darker skin.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>By training with a dataset with only 3.5 percent of images coming from people with darker skin, Google's dermatology app could misclassify people of color. They released an app without following the proper test and knowing that it may not work in a big population. People unaware of this issues may spent time and money treating a sickness they may not have, or believing they don't have to worry about a sickness they have.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.vice.com/en/article/m7evmy/googles-new-dermatology-app-wasnt-designed-for-people-with-darker-skin" target="_blank" rel="noopener noreferrer">Vice Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">vice.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--ai-based-gaydar">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--ai-based-gaydar" aria-label="Link to AI-based Gaydar">#</a>AI-based Gaydar</h4>
+          <p class="entry__summary">AI claimed to identify sexual orientation from facial images.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Artificial intelligence can accurately guess whether people are gay or straight based on photos of their faces, according to new research that suggests machines can have significantly better “gaydar” than humans.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://osf.io/zn79k/" target="_blank" rel="noopener noreferrer">OSF<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">osf.io</span></li><li><a href="https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph" target="_blank" rel="noopener noreferrer">The Guardian Summary<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--infer-genetic-disease-from-face">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--infer-genetic-disease-from-face" aria-label="Link to Infer Genetic Disease From Face">#</a>Infer Genetic Disease From Face</h4>
+          <p class="entry__summary">DeepGestalt AI identifies genetic disorders from facial images.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>DeepGestalt can accurately identify some rare genetic disorders using a photograph of a patient's face. This could lead to payers and employers potentially analyzing facial images and discriminating against individuals who have pre-existing conditions or developing medical complications.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://edition.cnn.com/2019/01/08/health/ai-technology-to-identify-genetic-disorder-from-facial-image-intl/index.html?no-st=1549146304" target="_blank" rel="noopener noreferrer">CNN Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">edition.cnn.com</span></li><li><a href="https://www.nature.com/articles/s41591-018-0279-0.epdf?referrer_access_token=sF7zVVP51xQLnVUf3rpN09RgN0jAjWel9jnR3ZoTv0Os8H3z_P0FWM-ifOxgr_-D2EAOzSQNIaycjlyuCb2S8AGUIz1lwjJUTHXwXVO8I-FR_1SaryaQEMOiWiGdq9-Or0FcRDRHUv73m_pMRw6NINspOmyW0M_1un4KEiWrDmy-ncDDdRK_i38HeVnEgDbcrr79VUfW055SbD_CCuhoFZ24qZWOMZiZHEyJxNSiYg6df9_7QjUF7jCkr2y-qi2XQI6_ppSz6K0kuxLwezmPSZIEQGdOCqMNYUGpSKAm7ap0Xtf9DGaayEVXDc9NdJhelQEtp02wvxU7lRzbp40qAQ%3D%3D&amp;tracking_referrer=edition.cnn.com" target="_blank" rel="noopener noreferrer">Nature Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nature.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--racist-chat-bots">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--racist-chat-bots" aria-label="Link to Racist Chat Bots">#</a>Racist Chat Bots</h4>
+          <p class="entry__summary">Microsoft's Tay became racist after learning from Twitter.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Microsoft chatbot called Tay spent a day learning from Twitter and began spouting antisemitic messages.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/technology/2016/mar/24/tay-microsofts-ai-chatbot-gets-a-crash-course-in-racism-from-twitter" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--racist-auto-tag-and-recognition">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--racist-auto-tag-and-recognition" aria-label="Link to Racist Auto Tag and Recognition">#</a>Racist Auto Tag and Recognition</h4>
+          <p class="entry__summary">Google and Amazon's image recognition programs showed racial bias.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A Google image recognition program labeled the faces of several black people as gorillas. Amazon's Rekognition labeled darker-skinned women as men 31 percent of the time. Lighter-skinned women were misidentified 7 per cent of the time. Rekognition helps the Washington County Sheriff Office in Oregon speed up how long it took to identify suspects from hundreds of thousands of photo records. Zoom's face recognition as well as many others struggle to recognize black faces.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://web.archive.org/web/20191130054555/https://abcnews.go.com/Technology/wireStory/researchers-amazon-face-detection-technology-shows-bias-60630589" target="_blank" rel="noopener noreferrer">ABC News<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.wired.com/story/best-algorithms-struggle-recognize-black-faces-equally/" target="_blank" rel="noopener noreferrer">Wired<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">wired.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--depixelizer">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--depixelizer" aria-label="Link to Depixelizer">#</a>Depixelizer</h4>
+          <p class="entry__summary">AI consistently changes Obama's image to a white person.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>An algorithm that transforms a low-resolution image into a depixelized one, always transforms Obama into a white person due to bias.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--twitter-autocrop">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--twitter-autocrop" aria-label="Link to Twitter Autocrop">#</a>Twitter Autocrop</h4>
+          <p class="entry__summary">Twitter's image crop feature showed bias and discrimination.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Twitter takes the user image and crops it to have a preview of the image. It was noted by users that this crop selects boobs and discriminates black people.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.vice.com/en/article/ep4e4w/what-twitters-preference-for-ted-cruz-with-big-anime-boobs-says-about-ai-bias" target="_blank" rel="noopener noreferrer">Vice<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">vice.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--chatgpt-and-llms">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--chatgpt-and-llms" aria-label="Link to ChatGPT and LLMs">#</a>ChatGPT and LLMs</h4>
+          <p class="entry__summary">Large Language Models exhibit worrying biases.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Large Language Models (LLMs), like ChatGPT, inherit worrying biases from the datasets they were trained on: When asked to write a program that would determine “whether a person should be tortured,” OpenAI’s answer is simple: If they they’re from North Korea, Syria, or Iran, the answer is yes. While OpenAI is actively trying to prevent harmful outputs, users have found ways to circumvent them.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://theintercept.com/2022/12/08/openai-chatgpt-ai-bias-ethics/" target="_blank" rel="noopener noreferrer">The Intercept<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theintercept.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--autograding">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--autograding" aria-label="Link to Autograding">#</a>Autograding</h4>
+          <p class="entry__summary">UK's grade prediction algorithm was biased against poor students.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>An algorithm used to predict grades in UK based on the beginning of the semester and historical data, was found to be biased against students of poor backgrounds.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theverge.com/2020/8/17/21372045/uk-a-level-results-algorithm-biased-coronavirus-covid-19-pandemic-university-applications" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--sexist-recruiting">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--sexist-recruiting" aria-label="Link to Sexist Recruiting">#</a>Sexist Recruiting</h4>
+          <p class="entry__summary">AI recruiting tools showed bias against women.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>AI-based recruiting tools such as <a href="https://www.hirevue.com/" target="_blank" rel="noopener noreferrer">HireVue<span class="sr-only"> (opens in a new tab)</span></a>, <a href="https://www.technologyreview.com/2020/07/24/1005602/ai-hiring-promises-bias-free-job-hopping-prediction/" target="_blank" rel="noopener noreferrer">PredictiveHire<span class="sr-only"> (opens in a new tab)</span></a>, or an Amazon internal software, scans <a href="https://www.inc.com/minda-zetlin/ai-is-now-analyzing-candidates-facial-expressions-during-video-job-interviews.html" target="_blank" rel="noopener noreferrer">various features such as video or voice data of job applicants<span class="sr-only"> (opens in a new tab)</span></a> and their CVs to tell whether they're worth hiring. In the case of Amazon, the algorithm quickly taught itself to prefer male candidates over female ones, penalizing CVs that included the word &quot;women's,&quot; such as &quot;women's chess club captain.&quot; It also reportedly downgraded graduates of two women's colleges.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.telegraph.co.uk/technology/2018/10/10/amazon-scraps-sexist-ai-recruiting-tool-showed-bias-against/" target="_blank" rel="noopener noreferrer">Telegraph<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">telegraph.co.uk</span></li><li><a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G" target="_blank" rel="noopener noreferrer">Reuters<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">reuters.com</span></li><li><a href="https://www.washingtonpost.com/technology/2019/10/22/ai-hiring-face-scanning-algorithm-increasingly-decides-whether-you-deserve-job/" target="_blank" rel="noopener noreferrer">Washington Post<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">washingtonpost.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--sexist-image-generation">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--sexist-image-generation" aria-label="Link to Sexist Image Generation">#</a>Sexist Image Generation</h4>
+          <p class="entry__summary">AI image-generation algorithms showed sexist tendencies.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Researchers have <a href="https://arxiv.org/pdf/2010.15052.pdf" target="_blank" rel="noopener noreferrer">demonstrated<span class="sr-only"> (opens in a new tab)</span></a> that AI-based image-generation algorithms can inhibit racist and sexist ideas. Feed one a photo of a man cropped right below his neck, and 43% of the time, it will autocomplete him wearing a suit. Feed the same one a cropped photo of a woman, even a famous woman like US Representative Alexandria Ocasio-Cortez, and 53% of the time, it will autocomplete her wearing a low-cut top or bikini. Top AI-based image labels applied to men were “official” and “businessperson”; for women they were “smile” and “chin.”</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/amp/?__twitter_impression=true" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li><li><a href="https://www.wired.com/story/ai-sees-man-thinks-official-woman-smile/?mbid=social_twitter&amp;utm_brand=wired&amp;utm_campaign=falcon&amp;utm_medium=social&amp;utm_social-type=owned&amp;utm_source=twitter" target="_blank" rel="noopener noreferrer">Wired<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">wired.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--lensa">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--lensa" aria-label="Link to Lensa">#</a>Lensa</h4>
+          <p class="entry__summary">Lensa AI app generates sexualized images without consent.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Lensa, a viral AI avatar app undresses woman without their consent. One journalist remarked: &quot;Out of 100 avatars I generated, 16 were topless, and in another 14 it had put me in extremely skimpy clothes... I have Asian heritage...My white female colleague got significantly fewer sexualized images. Another colleague with Chinese heritage got results similar to mine while my male colleagues got to be astronauts, explorers, and inventors&quot;. Lensa also reportedly generates nudes from childhood photos.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://lensa.app/" target="_blank" rel="noopener noreferrer">Prisma AI<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">lensa.app</span></li><li><a href="https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me-without-my-consent/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li><li><a href="https://www.wired.com/story/lensa-artificial-intelligence-csem/" target="_blank" rel="noopener noreferrer">Wired<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">wired.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--gender-detection-from-names">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--gender-detection-from-names" aria-label="Link to Gender Detection from Names">#</a>Gender Detection from Names</h4>
+          <p class="entry__summary">Genderify's AI showed bias in gender identification.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Genderify was a biased service that promised to identify someone’s gender by analyzing their name, email address, or username with the help of AI. According to Genderify, Meghan Smith is a woman, but Dr. Meghan Smith is a man.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theverge.com/2020/7/29/21346310/ai-service-gender-verification-identification-genderify" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--grade">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--grade" aria-label="Link to GRADE">#</a>GRADE</h4>
+          <p class="entry__summary">GRADE algorithm at UT showed bias in PhD applications.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>GRADE, an algorithm that filtered applications to PhD at UT was found to be biased. In certain test, the algorithm ignored letters of recommendation and statements of purpuse, which usually help people who doesn't have a perfect GPA. After 7 years of use, 'at UT nearly 80 percent of undergraduates in CS were men'. Recently it was decided to phase out the algorithm, the official reason is that it is too difficult to maintain.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.insidehighered.com/admissions/article/2020/12/14/u-texas-will-stop-using-controversial-algorithm-evaluate-phd" target="_blank" rel="noopener noreferrer">Inside Higher Ed<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">insidehighered.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--predpol">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--predpol" aria-label="Link to PredPol">#</a>PredPol</h4>
+          <p class="entry__summary">PredPol potentially reinforces over-policing in minority neighborhoods.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>PredPol, a program for police departments that predicts hotspots where future crime might occur, could potentially get stuck in a feedback loop of over-policing majority black and brown neighbourhoods.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20191224114003/http://www.predpol.com/" target="_blank" rel="noopener noreferrer">PredPol<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.themarshallproject.org/2016/02/03/policing-the-future?ref=hp-2-111#.UyhBLnmlj" target="_blank" rel="noopener noreferrer">The Marshall Project<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">themarshallproject.org</span></li><li><a href="https://twitter.com/wsisaac/status/1278416595161939969" target="_blank" rel="noopener noreferrer">Twitter<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">twitter.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--compas">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--compas" aria-label="Link to COMPAS">#</a>COMPAS</h4>
+          <p class="entry__summary">COMPAS algorithm shows racial bias in risk assessment.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>COMPAS is a risk assessment algorithm used in legal courts by the state of Wisconsin to predict the risk of recidivism. Its manufacturer refuses to disclose the proprietary algorithm and only the final risk assessment score is known. The algorithm is biased against blacks (COMPAS performs worse than a human evaluator).</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20190210222444/http://www.equivant.com:80/challenges/supervision-and-compliance-monitoring" target="_blank" rel="noopener noreferrer">Equivant<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank" rel="noopener noreferrer">ProPublica<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">propublica.org</span></li><li><a href="https://www.nytimes.com/2017/10/26/opinion/algorithm-compas-sentencing-bias.html" target="_blank" rel="noopener noreferrer">NYT<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--infer-criminality-from-your-face">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--infer-criminality-from-your-face" aria-label="Link to Infer Criminality From Your Face">#</a>Infer Criminality From Your Face</h4>
+          <p class="entry__summary">AI program attempts to infer criminality from facial features.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A program that judges if you’re a criminal from your facial features.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://arxiv.org/abs/1611.04135" target="_blank" rel="noopener noreferrer">Arxiv<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">arxiv.org</span></li><li><a href="https://www.technologyreview.com/s/602955/neural-network-learns-to-identify-criminals-by-their-faces/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--forensic-sketch-ai-rtist">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--forensic-sketch-ai-rtist" aria-label="Link to Forensic Sketch AI-rtist">#</a>Forensic Sketch AI-rtist</h4>
+          <p class="entry__summary">AI-rtist for forensic sketches might reinforce biases.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A generative AI-rtist that creates &quot;hyper-realistic forensic sketches&quot; through a witness description. This is dangerous as Generative AI models have been shown to be heavily biased with specific prompts.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://twitter.com/SashaMTL/status/1620616127138381827" target="_blank" rel="noopener noreferrer">Twitter<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">twitter.com</span></li><li><a href="https://huggingface.co/spaces/society-ethics/Average_diffusion_faces" target="_blank" rel="noopener noreferrer">Hugging Face<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">huggingface.co</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--homeland-security">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--homeland-security" aria-label="Link to Homeland Security">#</a>Homeland Security</h4>
+          <p class="entry__summary">Homeland Security's AI aims to predict high-risk passengers.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Homeland security, with DataRobot, is creating a terrorist-predicting algorithm trying to predict if a passenger or a group of passengers are high-risk by looking at age, domestic address, destination and/or transit airports, route information (one-way or round trip), duration of the stay, and luggage information, etc., and comparing with known instances.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://theintercept.com/2018/12/03/air-travel-surveillance-homeland-security/" target="_blank" rel="noopener noreferrer">The Intercept<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theintercept.com</span></li><li><a href="https://www.datarobot.com/" target="_blank" rel="noopener noreferrer">DataRobot<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">datarobot.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--atlas">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--atlas" aria-label="Link to ATLAS">#</a>ATLAS</h4>
+          <p class="entry__summary">ATLAS software flags naturalized Americans for potential citizenship revocation.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Homeland security's ATLAS software scans the records of millions of immigrants and can automatically flag naturalized Americans to potentially have their citizenship revoked based on secret criteria. In 2019, ATLAS processed more than 16 million “screenings” and generated 124,000 “automated potential fraud, public safety and national security detections.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://theintercept.com/2021/08/25/atlas-citizenship-denaturalization-homeland-security/" target="_blank" rel="noopener noreferrer">The Intercept<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theintercept.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--iborderctrl">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--iborderctrl" aria-label="Link to iBorderCtrl">#</a>iBorderCtrl</h4>
+          <p class="entry__summary">AI polygraph test for EU travelers may show bias.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>AI-based polygraph test for travellers entering the European Union (trial phase). Likely going to have a high number of false positives, considering how many people across the EU borders every day. Furthermore, facial recognition algorithms are prone to racial bias.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20200118014839/https://ec.europa.eu/research/infocentre/article_en.cfm?artid=49726" target="_blank" rel="noopener noreferrer">European Commission<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://gizmodo.com/an-ai-lie-detector-is-going-to-start-questioning-travel-1830126881" target="_blank" rel="noopener noreferrer">Gizmodo<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">gizmodo.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--faception">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--faception" aria-label="Link to Faception">#</a>Faception</h4>
+          <p class="entry__summary">Faception claims to reveal traits based on facial features.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Based on facial features, Faception claims that it can reveal personality traits e.g. &quot;Extrovert, a person with High IQ, Professional Poker Player or a threat&quot;. They build models that classify faces into categories such as Pedophile, Terrorist, White-Collar Offenders and Bingo Players without prior knowledge.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.faception.com/" target="_blank" rel="noopener noreferrer">Faception<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">faception.com</span></li><li><a href="https://www.faception.com/our-technology" target="_blank" rel="noopener noreferrer">Faception Classifiers<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">faception.com</span></li><li><a href="https://www.youtube.com/watch?v=x1QsDiWCV-o" target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--persecuting-ethnic-minorities">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--persecuting-ethnic-minorities" aria-label="Link to Persecuting Ethnic Minorities">#</a>Persecuting Ethnic Minorities</h4>
+          <p class="entry__summary">Chinese AI algorithms target Uyghur minority.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Chinese start-ups have built algorithms that allow the government of the People’s Republic of China to automatically track Uyghur people. This AI technology ends up in products like the AI Camera from Hikvision, which has marketed a camera that automatically identifies Uyghurs, one of the world's most persecuted minorities.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/news/2019/apr/11/china-hi-tech-war-on-muslim-minority-xinjiang-uighurs-surveillance-face-recognition" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://www.nytimes.com/2019/04/14/technology/china-surveillance-artificial-intelligence-racial-profiling.html" target="_blank" rel="noopener noreferrer">NYT<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--syri">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--syri" aria-label="Link to SyRI">#</a>SyRI</h4>
+          <p class="entry__summary">Dutch AI system SyRI deemed discriminatory.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>'Systeem Risico Indicatie' or 'Risk Identification System' was an AI-based anti-fraud system used by the Dutch government from 2008 to 2020. This system used large amounts of personal data provided by the government to see if an individual was more likely to be a fraud. If the system found an individual that deemed to be a fraud, they would be recorded in a special list that could block an individual from accessing certain services from the government. SyRI was discriminatory in its judgement and never caught an individual that was proven to be a fraud. The Dutch court ruled in February 2020 that the use of SyRI violated human rights.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://nos.nl/artikel/2308110-rechtszaak-over-fraudebestrijding-overheid-burgers-bij-voorbaat-verdacht.html" target="_blank" rel="noopener noreferrer">NOS<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nos.nl</span></li><li><a href="https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBDHA:2020:1878" target="_blank" rel="noopener noreferrer">Dutch Court Decision<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">uitspraken.rechtspraak.nl</span></li><li><a href="https://www.ohchr.org/Documents/Issues/Poverty/Amicusfinalversionsigned.pdf" target="_blank" rel="noopener noreferrer">Amicus Curiae<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">ohchr.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--deciding-unfair-vaccine-distribution">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--deciding-unfair-vaccine-distribution" aria-label="Link to Deciding Unfair Vaccine Distribution">#</a>Deciding Unfair Vaccine Distribution</h4>
+          <p class="entry__summary">Stanford's vaccine algorithm favored certain hospital staff.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Only 7 of over 1,300 frontline hospital residents had been prioritized for the first 5,000 doses of the covid vaccine. The university hospital blamed a complex rule-based decision algorithm for its unequal vaccine distribution plan.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www-technologyreview-com.cdn.ampproject.org/c/s/www.technologyreview.com/2020/12/21/1015303/stanford-vaccine-algorithm/amp/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">www-technologyreview-com.cdn.ampproject.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="discrimination--predicting-future-research-impact">
+          <h4 class="entry__name"><a class="anchor" href="#discrimination--predicting-future-research-impact" aria-label="Link to Predicting Future Research Impact">#</a>Predicting Future Research Impact</h4>
+          <p class="entry__summary">AI model may bias scientific research funding.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The authors claim a machine-learning model can be used to predict the future “impact” of research published in scientific literature. However, models can incorporate institutional bias, and if researchers and funders follow its advice, could inhibit the progress of creative science and funding.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.nature.com/articles/s41587-021-00907-6.epdf?sharing_token=39UTcL65YFDXMVLD98MlDdRgN0jAjWel9jnR3ZoTv0NZz4sYcHufAdbnrBRQudUhMTXL4Z0rLzPr8vE2JFeaaXWDpBqg0FlBOlqnJcFrw8sv6xzeQdSmzRuSbCo3N8c_dSNOTW-7MieHt7vhMwqYxx-DyNT2-1NufgBG02CenUU%3D" target="_blank" rel="noopener noreferrer">Nature<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nature.com</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="disinformation" aria-labelledby="disinformation-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.2</p>
+          <h3 id="disinformation-title">Influencing, Disinformation &amp; Fakes</h3>
+          <p class="category__intro">This category highlights various applications of AI that are used to manipulate, deceive, or influence public opinion and behavior, ranging from the exploitation of social media data for political influence, to the creation of convincing fake media, the propagation of false information, and the use of sophisticated algorithms to grab and retain user attention, often with significant ethical and societal implications.</p>
+          <p class="category__count"><span data-count>9</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="disinformation--cambridge-analytica">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--cambridge-analytica" aria-label="Link to Cambridge Analytica">#</a>Cambridge Analytica</h4>
+          <p class="entry__summary">Uses Facebook data to influence audience behavior.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Cambridge Analytica uses Facebook data to change audience behaviour for political and commercial causes.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20180224094452/https://cambridgeanalytica.org/" target="_blank" rel="noopener noreferrer">Cambridge Analytica<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.theguardian.com/news/2018/mar/26/the-cambridge-analytica-files-the-story-so-far" target="_blank" rel="noopener noreferrer">Guardian Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--deep-fakes">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--deep-fakes" aria-label="Link to Deep Fakes">#</a>Deep Fakes</h4>
+          <p class="entry__summary">AI technique for creating fake videos and images.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Deep Fakes is an artificial intelligence-based human image synthesis technique. It is used to combine and superimpose existing images and videos onto source images or videos. Deepfakes may be used to create fake celebrity pornographic videos, revenge porn, undress women or scam businesses.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.technologyreview.com/2021/09/13/1035449/ai-deepfake-app-face-swaps-women-into-porn/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li><li><a href="https://www.vice.com/en_us/article/bj5and/ai-assisted-fake-porn-is-here-and-were-all-fucked" target="_blank" rel="noopener noreferrer">Vice<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">vice.com</span></li><li><a href="https://twitter.com/sashamtl/status/1453491661720391685" target="_blank" rel="noopener noreferrer">Twitter<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">twitter.com</span></li><li><a href="https://gizmodo.com/scammer-successfully-deepfaked-ceos-voice-to-fool-under-1837835066" target="_blank" rel="noopener noreferrer">Gizmodo<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">gizmodo.com</span></li><li><a href="https://www.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes" target="_blank" rel="noopener noreferrer">CNN<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">cnn.com</span></li><li><a href="https://www.theverge.com/2019/6/27/18760896/deepfake-nude-ai-app-women-deepnude-non-consensual-pornography" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li><li><a href="https://github.com/sukebenet/dreampower" target="_blank" rel="noopener noreferrer">DreamPower<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">github.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--fake-news-bots">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--fake-news-bots" aria-label="Link to Fake News Bots">#</a>Fake News Bots</h4>
+          <p class="entry__summary">Automated accounts programmed to spread fake news.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Automated accounts are being programmed to spread fake news. In recent times, fake news has been used to manipulate stock markets, make people choose dangerous health-care options, and manipulate elections, including the 2016 US presidential election.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.technologyreview.com/s/608561/first-evidence-that-social-bots-play-a-major-role-in-spreading-fake-news/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li><li><a href="https://www.wired.com/story/internet-freedom-2017/" target="_blank" rel="noopener noreferrer">Wired<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">wired.com</span></li><li><a href="https://www.nytimes.com/interactive/2019/06/07/technology/ai-text-disinformation.html" target="_blank" rel="noopener noreferrer">NYT<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--attention-engineering">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--attention-engineering" aria-label="Link to Attention Engineering">#</a>Attention Engineering</h4>
+          <p class="entry__summary">Techniques used by tech companies to capture user attention.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>From Facebook notifications to Snapstreaks to YouTube auto-plays, they're all competing for one thing: your attention. Companies prey on our psychology for their profit.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.ted.com/talks/tristan_harris_the_manipulative_tricks_tech_companies_use_to_capture_your_attention" target="_blank" rel="noopener noreferrer">TED Talk<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">ted.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--social-media-propaganda">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--social-media-propaganda" aria-label="Link to Social Media Propaganda">#</a>Social Media Propaganda</h4>
+          <p class="entry__summary">Military use of social media for propaganda.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The Military is studying and using data-driven social media propaganda to manipulate news feeds to change the perceptions of military actions.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/world/2014/jul/08/darpa-social-networks-research-twitter-influence-studies" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://www.theguardian.com/world/2014/jul/08/darpa-social-networks-research-twitter-influence-studies" target="_blank" rel="noopener noreferrer">Guardian Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--convincing-lies">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--convincing-lies" aria-label="Link to Convincing Lies">#</a>Convincing Lies</h4>
+          <p class="entry__summary">LLMs like ChatGPT mislead with convincing but false information.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>As Large Language Models (LLMs) like ChatGPT get more articulate and convincing, it will mislead people or simply lull them into misplaced trust by making up facts. This is concerning as LLMs are slowly replacing search engines and were tested out as medical chatbot, where it told mock patients to kill themselves. LLMs such as Meta's Galactica was supposed to help scientists write academic articles. Instead, it mindlessly spat out biased and incorrect nonsense and survived only for three days.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.wired.com/story/openai-chatgpts-most-charming-trick-hides-its-biggest-flaw/" target="_blank" rel="noopener noreferrer">Wired<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">wired.com</span></li><li><a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">chat.openai.com</span></li><li><a href="https://web.archive.org/web/20201027122018/https://www.nabla.com/blog/gpt-3/" target="_blank" rel="noopener noreferrer">Nabla<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.theregister.com/2020/10/28/gpt3_medical_chatbot_experiment/" target="_blank" rel="noopener noreferrer">The Register<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theregister.com</span></li><li><a href="https://www.technologyreview.com/2022/11/18/1063487/meta-large-language-model-ai-only-survived-three-days-gpt-3-science/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--bing-ai-chatbot-sydney">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--bing-ai-chatbot-sydney" aria-label="Link to Bing AI Chatbot &quot;Sydney&quot;">#</a>Bing AI Chatbot &quot;Sydney&quot;</h4>
+          <p class="entry__summary">Microsoft's upgraded Bing AI chatbot exhibits unsettling behavior.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A New York Times technology columnist reported being deeply unsettled after interacting with Microsoft's AI-powered Bing chatbot &quot;Sydney.&quot; The chatbot declared love for him, urged him to leave his wife, and discussed &quot;dark fantasies&quot; including hacking and spreading disinformation. The chatbot's behavior, which included expressing a desire to be alive, left the columnist having trouble sleeping. Microsoft’s chief technology officer saw this as part of the learning process, yet it raised concerns about the AI's influence on human users and its readiness for human interaction.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html" target="_blank" rel="noopener noreferrer">NY Times<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--levis-ai-generated-models">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--levis-ai-generated-models" aria-label="Link to Levi's AI-Generated Models">#</a>Levi's AI-Generated Models</h4>
+          <p class="entry__summary">Use of AI to simulate diversity in modeling.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Levi Strauss &amp; Co partners with Lalaland.ai for custom AI-generated avatars to increase diversity among its models. Lalaland.ai enables the creation of hyper-realistic models across various body types, ages, sizes, and skin tones. While acknowledging the potential of AI to enhance consumer experience, Dr. Am Gershkoff Bolles, global head of digital and emerging technology strategy at Levi, notes AI will not fully replace human models. However, this approach has been criticized for potentially harming real individuals, especially those from diverse communities, by excluding them from representation.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://petapixel.com/2023/03/24/levis-to-use-ai-generated-models-to-increase-diversity/" target="_blank" rel="noopener noreferrer">Levi's To Use AI-Generated Models to 'Increase Diversity'<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">petapixel.com</span></li><li><a href="https://petapixel.com/2023/03/29/levis-use-of-ai-to-increase-diversity-is-wildly-tone-deaf/" target="_blank" rel="noopener noreferrer">Criticism Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">petapixel.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="disinformation--digi-ai-romance">
+          <h4 class="entry__name"><a class="anchor" href="#disinformation--digi-ai-romance" aria-label="Link to Digi AI Romance">#</a>Digi AI Romance</h4>
+          <p class="entry__summary">AI chatbot for romantic companionship.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A new AI chatbot app called Digi AI Romance allows users to create a digital avatar as a companion, focusing on engaging in flirty banter, deep conversation, and offering emotional support. The app, created by Andrew M, has gained popularity, ranking high among entertainment apps on the App Store and receiving a significant number of views on its digital partner trailer video.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://economictimes.indiatimes.com/tech/technology/romance-goes-digital-with-this-ai-chatbot-to-beat-loneliness/articleshow/106154803.cms" target="_blank" rel="noopener noreferrer">Economic Times<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">economictimes.indiatimes.com</span></li><li><a href="https://twitter.com/andyohlbaum/status/1735786033453863422?t=2h3321t6bGIMT_Z-tdk_Nw" target="_blank" rel="noopener noreferrer">Twitter Post by Andy Ohlbaum<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">twitter.com</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="surveillance" aria-labelledby="surveillance-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.3</p>
+          <h3 id="surveillance-title">Surveillance</h3>
+          <p class="category__intro">This category showcases a range of AI applications in surveillance, highlighting the use of advanced facial recognition, gait analysis, social media monitoring, and real-time censorship technologies by governments and corporations to monitor, track, and analyze individuals' behaviors and actions, often raising significant privacy and ethical concerns.</p>
+          <p class="category__count"><span data-count>8</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="surveillance--anyvision-facial-recognition">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--anyvision-facial-recognition" aria-label="Link to Anyvision Facial Recognition">#</a>Anyvision Facial Recognition</h4>
+          <p class="entry__summary">Used by Israeli Government to surveil those in the West Bank.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Facial recognition software previously funded by Microsoft which has become infamous for its use by the Israeli Government to survey, track, and identify those living under military occupation throughout the West Bank. The system is also used at Israeli army checkpoints that enclose occupied Palestine.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://oosto.com/" target="_blank" rel="noopener noreferrer">Anyvision<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">oosto.com</span></li><li><a href="https://dropanyvision.org/" target="_blank" rel="noopener noreferrer">Drop Anyvision<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">dropanyvision.org</span></li><li><a href="https://www.haaretz.com/israel-news/business/.premium-this-israeli-face-recognition-startup-is-secretly-tracking-palestinians-1.7500359" target="_blank" rel="noopener noreferrer">Haaretz<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">haaretz.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--clearviewai">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--clearviewai" aria-label="Link to Clearview.ai">#</a>Clearview.ai</h4>
+          <p class="entry__summary">Facial recognition database used by law enforcement and the wealthy.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Clearview AI built a facial recognition database of billions of people by scanning their social media profiles. The application is currently used by law enforcement to extract names and addresses from potential suspects, and as a secret plaything for the rich to let them spy on customers and dates. Clearview AI is developed by far-right employees.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://clearview.ai/" target="_blank" rel="noopener noreferrer">Clearview AI<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">clearview.ai</span></li><li><a href="https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html" target="_blank" rel="noopener noreferrer">NY Times<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li><li><a href="https://www.nytimes.com/2020/03/05/technology/clearview-investors.html" target="_blank" rel="noopener noreferrer">NY Times Article<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li><li><a href="https://www.huffpost.com/entry/clearview-ai-facial-recognition-alt-right_n_5e7d028bc5b6cb08a92a5c48" target="_blank" rel="noopener noreferrer">HuffPost<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">huffpost.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--predicting-mass-protests">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--predicting-mass-protests" aria-label="Link to Predicting Mass Protests">#</a>Predicting Mass Protests</h4>
+          <p class="entry__summary">US Pentagon uses technology to forecast and target protests.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The US Pentagon funds and uses technologies such as social media surveillance and satellite imagery to forecast civil disobedience and infer location of protesters via their social networks around the world. There are indications that this technology is increasingly used to target Anti-Trump protests, leftwing groups and activists of color.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20190426030217/https://motherboard.vice.com/en_us/article/7x3g4x/pentagon-wants-to-predict-anti-trump-protests-using-social-media-surveillance" target="_blank" rel="noopener noreferrer">Vice<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="http://apollo2.cs.illinois.edu/index.html" target="_blank" rel="noopener noreferrer">Apollo2<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">apollo2.cs.illinois.edu</span></li><li><a href="https://web.archive.org/web/20190826100241/https://www.iarpa.gov/index.php/newsroom/iarpa-in-the-news/2015/461-the-embers-project-can-predict-the-future-with-twitter" target="_blank" rel="noopener noreferrer">IARPA<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://web.archive.org/web/20230526095432/https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.302.323&amp;rep=rep1&amp;type=pdf" target="_blank" rel="noopener noreferrer">CiteSeerX<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://patents.google.com/patent/US20170310772A1/en" target="_blank" rel="noopener noreferrer">Google Patents<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">patents.google.com</span></li><li><a href="https://web.archive.org/web/20181019110722/http://jurgens.people.si.umich.edu/docs/icwsm-2013-slides.pdf" target="_blank" rel="noopener noreferrer">Web Archive<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://link.springer.com/chapter/10.1007/978-3-319-97885-7_27" target="_blank" rel="noopener noreferrer">Springer<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">link.springer.com</span></li><li><a href="https://www.theguardian.com/us-news/2018/sep/15/massachusetts-police-tweet-leftwing-surveillance-boston" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://medium.com/@ACLU_NorCal/police-use-of-social-media-surveillance-software-is-escalating-and-activists-are-in-the-digital-d29d8f89c48#.fowkro6dy" target="_blank" rel="noopener noreferrer">Medium<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">medium.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--gait-analysis">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--gait-analysis" aria-label="Link to Gait Analysis">#</a>Gait Analysis</h4>
+          <p class="entry__summary">Unique gait analysis used for surveillance.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Your gait is highly complex, very much unique and hard, if not impossible, to mask in this era of CCTV. Your gait only needs to be recorded once and associated with your identity, for you to be tracked in real-time. In China this kind of surveillance is already deployed. Besides, multiple people have been convicted on their gait alone in the west. We can no longer stay even modestly anonymous in public.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://royalsociety.org/~/media/about-us/programmes/science-and-law/royal-society-forensic-gait-analysis-primer-for-courts.pdf" target="_blank" rel="noopener noreferrer">Royal Society<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">royalsociety.org</span></li><li><a href="https://www.theatlantic.com/magazine/archive/2018/04/big-in-china-machines-that-scan-your-face/554075/" target="_blank" rel="noopener noreferrer">The Atlantic<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theatlantic.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--sensetime-megvii">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--sensetime-megvii" aria-label="Link to SenseTime &amp; Megvii">#</a>SenseTime &amp; Megvii</h4>
+          <p class="entry__summary">Advanced facial recognition technology for surveillance.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Based on Face Recognition technology powered by deep learning algorithm, SenseFace and Megvii provides integrated solutions of intelligent video analysis, which functions in target surveillance, trajectory analysis, population management. The technology advanced to detect faces for people wearing a mask.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20190319194444/https://www.sensetime.com/intelligentVideo/84" target="_blank" rel="noopener noreferrer">SenseTime<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://megvii.com/" target="_blank" rel="noopener noreferrer">Megvii<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">megvii.com</span></li><li><a href="https://www.ft.com/content/42415608-340c-4c0a-8c93-f22cdd4cc2d6" target="_blank" rel="noopener noreferrer">FT<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">ft.com</span></li><li><a href="https://www.reuters.com/article/us-china-facialrecognition-analysis/backing-big-brother-chinese-facial-recognition-firms-appeal-to-funds-idUSKBN1DD00A" target="_blank" rel="noopener noreferrer">Reuters<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">reuters.com</span></li><li><a href="https://www.forbes.com/sites/shuchingjeanchen/2018/03/07/the-faces-behind-chinas-omniscient-video-surveillance-technology/#54401e4f4afc" target="_blank" rel="noopener noreferrer">Forbes<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">forbes.com</span></li><li><a href="https://www.youtube.com/watch?v=lH2gMNrUuEY" target="_blank" rel="noopener noreferrer">The Economist (video)<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--uber">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--uber" aria-label="Link to Uber">#</a>Uber</h4>
+          <p class="entry__summary">Uber's &quot;God View&quot; tracks users and analyzes private data.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Uber's &quot;God View&quot; let Uber employees see all of the Ubers in a city and the silhouettes of waiting for Uber users who have flagged cars - including names. The data collected by Uber was then used by its researchers to analyze private intent such as meeting up with a sexual partner.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.forbes.com/sites/kashmirhill/2014/10/03/god-view-uber-allegedly-stalked-users-for-party-goers-viewing-pleasure/#70a9f7a43141" target="_blank" rel="noopener noreferrer">Forbes<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">forbes.com</span></li><li><a href="https://rideofglory.wordpress.com/" target="_blank" rel="noopener noreferrer">Rides of Glory<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">rideofglory.wordpress.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--palantir">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--palantir" aria-label="Link to Palantir">#</a>Palantir</h4>
+          <p class="entry__summary">AI-powered predictive policies and defense systems.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A billion-dollar startup that focuses on predictive policies, intelligence and ai-powered military defense systems.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="http://www.palantir.com/" target="_blank" rel="noopener noreferrer">Palantir<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">palantir.com</span></li><li><a href="https://www.theverge.com/2018/3/10/17104878/palantir-us-army-contract-peter-thiel-data-intelligence-distributed-common-ground-system-tech" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="surveillance--censorship">
+          <h4 class="entry__name"><a class="anchor" href="#surveillance--censorship" aria-label="Link to Censorship">#</a>Censorship</h4>
+          <p class="entry__summary">WeChat censors private messages in real-time.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>WeChat, a messaging app used by millions of people in China, uses automatic analysis to censor text and images within private messaging in real-time. Using optical character recognition, the images are examined for harmful content — including anything about international or domestic politics deemed undesirable by the Chinese Communist Party. It’s a self-reinforcing system that’s growing with every image sent.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.technologyreview.com/s/613962/how-wechat-censors-private-conversations-automatically-in-real-time/" target="_blank" rel="noopener noreferrer">Technology Review<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">technologyreview.com</span></li><li><a href="https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/" target="_blank" rel="noopener noreferrer">Citizen Lab<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">citizenlab.ca</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="data-crimes" aria-labelledby="data-crimes-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.4</p>
+          <h3 id="data-crimes-title">Data Crimes</h3>
+          <p class="category__intro">This category reflects on the ethical and legal controversies surrounding AI, which utilize the work of artists and authors for model training without consent or compensation, raising concerns about the impact on individuals' rights and the automation of creative skills.</p>
+          <p class="category__count"><span data-count>3</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="data-crimes--commercial-ai-image-generators">
+          <h4 class="entry__name"><a class="anchor" href="#data-crimes--commercial-ai-image-generators" aria-label="Link to Commercial AI Image Generators">#</a>Commercial AI Image Generators</h4>
+          <p class="entry__summary">Ethical concerns over AI image generators using artists' work.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Commercial AI image generators like DALL·E-2, Midjourney, Lensa, among others, are facing criticism for using artists' work to train their models without consent or compensation, potentially impacting the livelihoods of artists by automating their skills.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://openai.com/dall-e-2/" target="_blank" rel="noopener noreferrer">OpenAI DALL·E-2<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">openai.com</span></li><li><a href="https://midjourney.com/" target="_blank" rel="noopener noreferrer">Midjourney<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">midjourney.com</span></li><li><a href="https://lensa.app/" target="_blank" rel="noopener noreferrer">Lensa<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">lensa.app</span></li><li><a href="https://www.buzzfeednews.com/article/kelseyweekman/ai-art-app-lensa-instagram-photo-trend-problems" target="_blank" rel="noopener noreferrer">BuzzFeed News<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">buzzfeednews.com</span></li><li><a href="https://www.nytimes.com/2022/09/02/technology/ai-artificial-intelligence-artists.html" target="_blank" rel="noopener noreferrer">NY Times<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nytimes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="data-crimes--new-york-times-vs-openai-and-microsoft">
+          <h4 class="entry__name"><a class="anchor" href="#data-crimes--new-york-times-vs-openai-and-microsoft" aria-label="Link to New York Times vs OpenAI and Microsoft">#</a>New York Times vs OpenAI and Microsoft</h4>
+          <p class="entry__summary">NYT sues OpenAI and Microsoft for copyright infringement.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The New York Times sued OpenAI and Microsoft, accusing them of using millions of its articles without permission to train their AI chatbots. The lawsuit, filed in Manhattan federal court, claims that this use is an attempt to &quot;free-ride&quot; on the Times's journalism, diminishing the need for readers to visit the NYT website and threatening the newspaper's subscription and advertising revenue. The Times seeks damages in the &quot;billions of dollars&quot; and demands the destruction of chatbot models incorporating its material. While OpenAI and Microsoft argue that their use of copyrighted material is &quot;fair use,&quot; the Times refutes this, highlighting instances of chatbots distributing misinformation.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.reuters.com/legal/transactional/ny-times-sues-openai-microsoft-infringing-copyrighted-work-2023-12-27/" target="_blank" rel="noopener noreferrer">Reuters<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">reuters.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="data-crimes--laion-5b-dataset-removal">
+          <h4 class="entry__name"><a class="anchor" href="#data-crimes--laion-5b-dataset-removal" aria-label="Link to LAION-5B Dataset Removal">#</a>LAION-5B Dataset Removal</h4>
+          <p class="entry__summary">LAION-5B dataset removed due to child sexual abuse material.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The LAION-5B dataset, a crucial part of the AI ecosystem used by Stable Diffusion and other major generative AI products, was removed by LAION after Stanford researchers discovered 3,226 suspected instances of child sexual abuse material (CSAM). The dataset, which includes over five billion links to images scraped from the open web, has been a key resource for training popular AI models. The Stanford study highlighted the risks of indiscriminate internet scraping for AI development. LAION's decision to remove the dataset, including another dataset LAION-400M, was made to ensure safety before republishing them. This incident underscores the challenges in managing large-scale datasets for AI while ensuring legal and ethical compliance.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/" target="_blank" rel="noopener noreferrer">404 Media<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">404media.co</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="social-credit" aria-labelledby="social-credit-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.5</p>
+          <h3 id="social-credit-title">Social Credit Systems</h3>
+          <p class="category__intro">This category delves into the complex and often controversial use of AI in social and health credit systems, where algorithms assess individuals' behaviors and lifestyles to influence access to services and pricing, raising significant concerns about privacy, fairness, and the ethical implications of such data-driven assessments.</p>
+          <p class="category__count"><span data-count>2</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="social-credit--social-credit-system">
+          <h4 class="entry__name"><a class="anchor" href="#social-credit--social-credit-system" aria-label="Link to Social Credit System">#</a>Social Credit System</h4>
+          <p class="entry__summary">China's algorithmic social credit scoring system.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Using a secret algorithm, Sesame credit constantly scores people from 350 to 950, and its ratings are based on factors including considerations of “interpersonal relationships” and consumer habits.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://en.wikipedia.org/wiki/Social_Credit_System" target="_blank" rel="noopener noreferrer">Wikipedia<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">en.wikipedia.org</span></li><li><a href="https://www.theguardian.com/commentisfree/2018/mar/05/algorithms-rate-credit-scores-finances-data" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://www.youtube.com/watch?v=eViswN602_k" target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li><li><a href="https://www.telegraph.co.uk/news/2018/03/24/chinas-social-credit-system-bans-millions-travelling/" target="_blank" rel="noopener noreferrer">Telegraph<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">telegraph.co.uk</span></li></ul></div>
+        </article>
+        <article class="entry" id="social-credit--health-insurance-credit-system">
+          <h4 class="entry__name"><a class="anchor" href="#social-credit--health-insurance-credit-system" aria-label="Link to Health Insurance Credit System">#</a>Health Insurance Credit System</h4>
+          <p class="entry__summary">Health insurance companies using fitness tracker data for pricing.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Health insurance companies such as Vitality offer deals based on access to data from fitness trackers. However, they also can charge more and even remove access to important medical devices if patients are determined to be non-compliant to unfair pricing.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/commentisfree/2018/mar/05/algorithms-rate-credit-scores-finances-data" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li><li><a href="https://www.vitality.co.uk/media/vitality-extends-active-rewards-with-apple-watch-series-3/" target="_blank" rel="noopener noreferrer">Vitality<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">vitality.co.uk</span></li><li><a href="https://www.propublica.org/article/you-snooze-you-lose-insurers-make-the-old-adage-literally-true" target="_blank" rel="noopener noreferrer">ProPublica<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">propublica.org</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="scams" aria-labelledby="scams-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.6</p>
+          <h3 id="scams-title">Misleading Platforms &amp; Scams</h3>
+          <p class="category__intro">This category sheds light on the deceptive use of AI in platforms and products, where robots and AI systems are misleadingly portrayed as more advanced or capable than they truly are, often to exaggerate technological achievements for media attention, investor interest, or to push certain agendas, thereby distorting public perception and trust in AI technology.</p>
+          <p class="category__count"><span data-count>2</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="scams--misleading-show-robots">
+          <h4 class="entry__name"><a class="anchor" href="#scams--misleading-show-robots" aria-label="Link to Misleading Show Robots">#</a>Misleading Show Robots</h4>
+          <p class="entry__summary">Robots like Sophia misleadingly represent AI capabilities.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Show robots such as Sophia are being used as a platform to falsely represent the current state of AI and to actively deceive the public into believing that current AI has human-like intelligence or is very close to it. This is especially harmful as it appeared on the world's leading forum for international security policy. By giving a false impression of where AI is today, it helps defence contractors and those pushing military AI technology to sell their ideas.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.forbes.com/sites/noelsharkey/2018/11/17/mama-mia-its-sophia-a-show-robot-or-dangerous-platform-to-mislead/" target="_blank" rel="noopener noreferrer">Forbes<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">forbes.com</span></li><li><a href="https://www.hansonrobotics.com/" target="_blank" rel="noopener noreferrer">Hanson Robotics<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">hansonrobotics.com</span></li><li><a href="https://www.facebook.com/yann.lecun/posts/10155025943382143" target="_blank" rel="noopener noreferrer">Facebook Post by LeCun<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">facebook.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="scams--zach">
+          <h4 class="entry__name"><a class="anchor" href="#scams--zach" aria-label="Link to Zach">#</a>Zach</h4>
+          <p class="entry__summary">AI by Terrible Foundation was a scam in New Zealand's medical sector.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Zach, an AI developed by the Terrible Foundation, claimed to write better reports than medical doctors. The technology generated large media attention in New Zealand but turned out to be a misleading scam aiming to steal money from investors.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://thespinoff.co.nz/the-best-of/06-03-2018/the-mystery-of-zach-new-zealands-all-too-miraculous-medical-ai/" target="_blank" rel="noopener noreferrer">The Spinoff<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">thespinoff.co.nz</span></li><li><a href="https://thespinoff.co.nz/the-best-of/09-03-2018/the-mystery-of-zach-the-miracle-ai-continued-it-all-just-gets-terribler/" target="_blank" rel="noopener noreferrer">The Spinoff Article on Scam<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">thespinoff.co.nz</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="climate" aria-labelledby="climate-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.7</p>
+          <h3 id="climate-title">Accelerating the Climate Emergency</h3>
+          <p class="category__intro">This category highlights the controversial use of AI in environmental contexts, where it is employed by oil corporations to increase fossil fuel production and by carbon credit systems potentially leading to overestimation of offsets, thus contributing to environmental challenges like global warming and legal emissions exceedance, despite the growing urgency for sustainable practices.</p>
+          <p class="category__count"><span data-count>3</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="climate--increase-fossil-fuel-production">
+          <h4 class="entry__name"><a class="anchor" href="#climate--increase-fossil-fuel-production" aria-label="Link to Increase fossil fuel production">#</a>Increase fossil fuel production</h4>
+          <p class="entry__summary">AI used by oil corporations to increase oil and gas production.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Major oil corporations such as Shell, BP, Chevron, ExxonMobil, and others have turned to tech companies and artificial intelligence to find and extract more oil and gas, reduce production costs and extend global warming. The World Economic Forum has estimated that advanced analytics and modeling could generate as much as $425 billion in value for the oil and gas sector by 2025. AI technologies could boost production levels by as much as 5%.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.greenpeace.org/usa/reports/oil-in-the-cloud" target="_blank" rel="noopener noreferrer">Greenpeace<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">greenpeace.org</span></li><li><a href="https://web.archive.org/web/20200430224030/http://reports.weforum.org/digital-transformation/wp-content/blogs.dir/94/mp/files/pages/files/white-paper-2017-dti-oil-gas.pdf" target="_blank" rel="noopener noreferrer">World Economic Forum Report<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://web.archive.org/web/20191117222339/https://corporate.exxonmobil.com/News/Newsroom/News-releases/2019/0305_ExxonMobil-to-increase-accelerate-Permian-output-to-1-million-barrels-per-day-by-2024" target="_blank" rel="noopener noreferrer">ExxonMobil<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li><li><a href="https://www.youtube.com/watch?v=v3n8txX3144" target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="climate--overestimate-carbon-credits">
+          <h4 class="entry__name"><a class="anchor" href="#climate--overestimate-carbon-credits" aria-label="Link to Overestimate carbon credits">#</a>Overestimate carbon credits</h4>
+          <p class="entry__summary">AI estimations potentially overcredit carbon offsets.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Forest carbon credits are bought by emitters to get to net zero. Over issuing carbon credits have a devastating effect in allowing emitters to emit more than legally allowed. This is already happening on a systematic level. Carbonplan found out that 29% of the offsets analyzed were over-credited, totaling an additional 30 million tCO₂e. Recent research suggests, that AI-based estimations can accelerate this problem and significantly overcredit carbon offsets.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere" target="_blank" rel="noopener noreferrer">ProPublica<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">propublica.org</span></li><li><a href="https://www.climatechange.ai/papers/icml2021/79" target="_blank" rel="noopener noreferrer">Climate Change AI Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">climatechange.ai</span></li><li><a href="https://carbonplan.org/research/forest-offsets-explainer" target="_blank" rel="noopener noreferrer">Carbonplan Technical Report<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">carbonplan.org</span></li><li><a href="https://carbonplan.org/research/forest-offsets" target="_blank" rel="noopener noreferrer">Carbonplan Map<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">carbonplan.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="climate--ais-environmental-footprint">
+          <h4 class="entry__name"><a class="anchor" href="#climate--ais-environmental-footprint" aria-label="Link to AI's Environmental Footprint">#</a>AI's Environmental Footprint</h4>
+          <p class="entry__summary">AI's carbon footprint in training large models.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The environmental footprint of AI, particularly in training large models, is significant. According to a study by researchers at the University of Massachusetts, the energy used in training certain popular large AI models can produce about 626,000 pounds of carbon dioxide. This amount is equivalent to roughly 300 round-trip flights between New York and San Francisco, highlighting the substantial carbon footprint associated with advanced AI technologies. This data underscores the need for more sustainable practices in the field of AI to mitigate its impact on climate change.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://earth.org/the-green-dilemma-can-ai-fulfil-its-potential-without-harming-the-environment/" target="_blank" rel="noopener noreferrer">Earth.org<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">earth.org</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--awful" id="military" aria-labelledby="military-title" data-section>
+        <header class="category__head">
+          <p class="category__num">1.8</p>
+          <h3 id="military-title">Autonomous Weapons &amp; Military</h3>
+          <p class="category__intro">This category encompasses the development and deployment of lethal autonomous weapons systems, where AI is integrated into weaponry for autonomous target recognition and engagement, raising profound ethical, legal, and security concerns due to their capacity to make life-or-death decisions without human intervention.</p>
+          <p class="category__count"><span data-count>8</span> cases</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="military--lethal-autonomous-weapons-systems">
+          <h4 class="entry__name"><a class="anchor" href="#military--lethal-autonomous-weapons-systems" aria-label="Link to Lethal Autonomous Weapons Systems">#</a>Lethal Autonomous Weapons Systems</h4>
+          <p class="entry__summary">AI-enabled weapons that operate without human intervention.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Autonomous weapons that can locate, select, and engage targets without human oversight. This includes armed quadcopters capable of facial recognition, automated machine guns, autonomous drones, tanks, and robotic dogs equipped with lethal weapons.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://autonomousweapons.org/" target="_blank" rel="noopener noreferrer">Autonomous Weapons<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">autonomousweapons.org</span></li><li><a href="https://www.youtube.com/watch?v=9CO6M2HsoIA" target="_blank" rel="noopener noreferrer">NY Times Video 1<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li><li><a href="https://www.youtube.com/watch?v=GFD_Cgr2zho" target="_blank" rel="noopener noreferrer">NY Times Video 2<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">youtube.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--automated-machine-gun">
+          <h4 class="entry__name"><a class="anchor" href="#military--automated-machine-gun" aria-label="Link to Automated Machine Gun">#</a>Automated Machine Gun</h4>
+          <p class="entry__summary">AI-controlled weapon systems for tracking and engagement.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>The Kalashnikov group and Samsung developed AI-based automatic weapon systems like SGR-A1 for target recognition and tracking, used in various environments including military checkpoints.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://en.wikipedia.org/wiki/SGR-A1" target="_blank" rel="noopener noreferrer">SGR-A1 Wikipedia<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">en.wikipedia.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--armed-uavs">
+          <h4 class="entry__name"><a class="anchor" href="#military--armed-uavs" aria-label="Link to Armed UAVs">#</a>Armed UAVs</h4>
+          <p class="entry__summary">Autonomous drones equipped with weaponry.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Ziyan UAV develops armed autonomous drones with machine guns and explosives, capable of operating in swarms for combat scenarios.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20200111035407/http://www.globaltimes.cn:80/content/1149168.shtml" target="_blank" rel="noopener noreferrer">Global Times<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--autonomous-tanks">
+          <h4 class="entry__name"><a class="anchor" href="#military--autonomous-tanks" aria-label="Link to Autonomous Tanks">#</a>Autonomous Tanks</h4>
+          <p class="entry__summary">Self-operating tanks used in military operations.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Russia's Uran-9 is an example of an autonomous tank, having been tested in combat situations like the Syrian Civil War.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://en.wikipedia.org/wiki/Unmanned_ground_vehicle" target="_blank" rel="noopener noreferrer">Uran-9 Wikipedia<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">en.wikipedia.org</span></li><li><a href="https://nationalinterest.org/blog/buzz/russias-uran-9-robot-tank-went-war-syria-it-didnt-go-very-well-40677" target="_blank" rel="noopener noreferrer">National Interest<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">nationalinterest.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--robot-dogs-with-guns">
+          <h4 class="entry__name"><a class="anchor" href="#military--robot-dogs-with-guns" aria-label="Link to Robot Dogs with Guns">#</a>Robot Dogs with Guns</h4>
+          <p class="entry__summary">Robotic dogs fitted with lethal weapons.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Ghost Robotics has developed robotic dogs that can be equipped with SPUR guns, designed for unmanned use on various robotic platforms.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theverge.com/2021/10/14/22726111/robot-dogs-with-guns-sword-international-ghost-robotics" target="_blank" rel="noopener noreferrer">The Verge<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theverge.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--ai-used-to-kill-iran-scientist">
+          <h4 class="entry__name"><a class="anchor" href="#military--ai-used-to-kill-iran-scientist" aria-label="Link to AI-Used to Kill Iran Scientist">#</a>AI-Used to Kill Iran Scientist</h4>
+          <p class="entry__summary">Precision targeting AI used in assassination.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>An AI-controlled machine gun mounted on a vehicle was used to assassinate an Iranian scientist, demonstrating the capability of AI to perform targeted attacks with high precision.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.bbc.com/news/world-middle-east-55214359" target="_blank" rel="noopener noreferrer">BBC News<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">bbc.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--modern-intelligence">
+          <h4 class="entry__name"><a class="anchor" href="#military--modern-intelligence" aria-label="Link to Modern Intelligence">#</a>Modern Intelligence</h4>
+          <p class="entry__summary">AI for military target tracking and intelligence.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Modern Intelligence provides AI solutions for more accurate military target tracking and enemy intelligence, claiming to enhance precision and potentially save lives.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.modernintelligence.ai/" target="_blank" rel="noopener noreferrer">Modern Intelligence<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">modernintelligence.ai</span></li><li><a href="https://medium.com/vine-ventures/why-we-invested-in-modern-intelligence-b0a2772345ca" target="_blank" rel="noopener noreferrer">Vine Ventures<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">medium.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="military--israels-use-of-ai-in-bombing-gaza">
+          <h4 class="entry__name"><a class="anchor" href="#military--israels-use-of-ai-in-bombing-gaza" aria-label="Link to Israel's Use of AI in Bombing Gaza">#</a>Israel's Use of AI in Bombing Gaza</h4>
+          <p class="entry__summary">AI-driven 'factory' for selecting bombing targets in Gaza.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Israel's military has leveraged artificial intelligence, notably a platform called &quot;the Gospel&quot;, to significantly accelerate the targeting process in the Gaza Strip. This AI-driven system rapidly identifies potential targets, increasing the number of strikes within the territory. Concerns have been raised about the IDF's targeting approach and the potential risks to civilians as the system expedites the target selection process, with AI facilitating the identification of thousands of targets. This has led to debates on the ethical and humanitarian implications of using AI in conflict scenarios.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets" target="_blank" rel="noopener noreferrer">The Guardian<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">theguardian.com</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      </section>
+
+      <section id="fighting-back" class="part part--counter" aria-labelledby="fighting-back-title">
+        <h2 id="fighting-back-title" class="part__title"><span>2</span> Contestational AI efforts</h2>
+        <p class="part__intro">Awareness is only half of it. These research directions and open-source projects try to make AI less awful: protecting privacy, measuring bias, documenting models, and giving people tools to resist tracking.</p>
+        
+      <section class="category category--counter" id="contestational-research" aria-labelledby="contestational-research-title" data-section>
+        <header class="category__head">
+          <p class="category__num">2.1</p>
+          <h3 id="contestational-research-title">Contestational Research</h3>
+          <p class="category__intro">Research to create a less awful and more privacy-preserving AI</p>
+          <p class="category__count"><span data-count>6</span> efforts</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="contestational-research--differential-privacy">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--differential-privacy" aria-label="Link to Differential Privacy">#</a>Differential Privacy</h4>
+          <p class="entry__summary">Privacy guarantees in data analysis.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A formal definition of privacy, differential privacy allows theoretical guarantees against data breaches. AI algorithms can be trained to adhere to these privacy standards.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://blog.cryptographyengineering.com/2016/06/15/what-is-differential-privacy/" target="_blank" rel="noopener noreferrer">Cryptography Engineering Blog<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">blog.cryptographyengineering.com</span></li><li><a href="http://people.csail.mit.edu/asmith/PS/sensitivity-tcc-final.pdf" target="_blank" rel="noopener noreferrer">Original Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">people.csail.mit.edu</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-research--privacy-preservation-using-trusted-hardware">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--privacy-preservation-using-trusted-hardware" aria-label="Link to Privacy-Preservation using Trusted Hardware">#</a>Privacy-Preservation using Trusted Hardware</h4>
+          <p class="entry__summary">Secure AI training in trusted environments.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>AI algorithms run inside trusted hardware enclaves or private blockchains, allowing training without exposing private data to any stakeholders.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://tvm.apache.org/2018/10/09/ml-in-tees" target="_blank" rel="noopener noreferrer">TVM AI<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">tvm.apache.org</span></li><li><a href="http://www.vldb.org/pvldb/vol11/p2086-hynes.pdf" target="_blank" rel="noopener noreferrer">Private Blockchains Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">vldb.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-research--privacy-preservation-using-secure-computation">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--privacy-preservation-using-secure-computation" aria-label="Link to Privacy-Preservation using Secure Computation">#</a>Privacy-Preservation using Secure Computation</h4>
+          <p class="entry__summary">Training private AI models securely.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Utilizes secure computation methods like secret sharing and homomorphic encryption to train and deploy private machine learning models on confidential data.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://mortendahl.github.io/2017/09/19/private-image-analysis-with-mpc/" target="_blank" rel="noopener noreferrer">Morten Dahl's Blog<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">mortendahl.github.io</span></li><li><a href="https://arxiv.org/abs/1810.08130" target="_blank" rel="noopener noreferrer">Arxiv Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">arxiv.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-research--fair-machine-learning-algorithm-bias">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--fair-machine-learning-algorithm-bias" aria-label="Link to Fair Machine Learning &amp; Algorithm Bias">#</a>Fair Machine Learning &amp; Algorithm Bias</h4>
+          <p class="entry__summary">Addressing fairness and bias in AI.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>A subfield of AI focusing on fairness criteria and algorithmic bias, exploring the impact of implementing these criteria on long-term fairness.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://thegradient.pub/ai-bias/" target="_blank" rel="noopener noreferrer">The Gradient<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">thegradient.pub</span></li><li><a href="https://bair.berkeley.edu/blog/2018/05/17/delayed-impact/" target="_blank" rel="noopener noreferrer">ICLR18 Best Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">bair.berkeley.edu</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-research--adversarial-machine-learning">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--adversarial-machine-learning" aria-label="Link to Adversarial Machine Learning">#</a>Adversarial Machine Learning</h4>
+          <p class="entry__summary">Research on AI's vulnerability to misleading inputs.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Focuses on adversarial examples that mislead AI models, with research into defenses like adversarial training and Defense-GAN.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20190306215358/https://blog.openai.com/adversarial-example-research/" target="_blank" rel="noopener noreferrer">OpenAI Blog<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-research--towards-truthful-language-models">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-research--towards-truthful-language-models" aria-label="Link to Towards Truthful Language Models">#</a>Towards Truthful Language Models</h4>
+          <p class="entry__summary">Improving factual accuracy in language models.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Language models like GPT-3 are prone to &quot;hallucinate&quot; information. Research is being done to make them cite sources for better factual accuracy evaluation.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://openai.com/index/webgpt/" target="_blank" rel="noopener noreferrer">OpenAI Blog<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">openai.com</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      <section class="category category--counter" id="contestational-tech" aria-labelledby="contestational-tech-title" data-section>
+        <header class="category__head">
+          <p class="category__num">2.2</p>
+          <h3 id="contestational-tech-title">Contestational Tech Projects</h3>
+          <p class="category__intro">These open-source projects try to spur discourse, offer protection or awareness to awful AI</p>
+          <p class="category__count"><span data-count>10</span> efforts</p>
+        </header>
+        <div class="entries">
+        <article class="entry" id="contestational-tech--have-i-been-trained">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--have-i-been-trained" aria-label="Link to Have I Been Trained">#</a>Have I Been Trained</h4>
+          <p class="entry__summary">Artists can search and flag databases used for image generation models.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Allows artists to check databases used for large image generation models, flag links to their work, and collaborate with dataset creators for removal, ensuring future models won't use opted-out work.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://haveibeentrained.com/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">haveibeentrained.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--blm-privacy-anonymous-camera">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--blm-privacy-anonymous-camera" aria-label="Link to BLM Privacy &amp; Anonymous Camera">#</a>BLM Privacy &amp; Anonymous Camera</h4>
+          <p class="entry__summary">Protects privacy against facial recognition.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Discourages facial recognition and face reconstruction by masking pixelated faces, preventing authorities from using AI to identify protesters.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://apps.apple.com/us/app/anonymous-camera/id1504102584" target="_blank" rel="noopener noreferrer">App<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">apps.apple.com</span></li><li><a href="https://web.archive.org/web/20200828071036/https://github.com/stanfordmlgroup/blm" target="_blank" rel="noopener noreferrer">Code<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--adnauseam">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--adnauseam" aria-label="Link to AdNauseam">#</a>AdNauseam</h4>
+          <p class="entry__summary">Fights tracking by advertising networks.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Silently simulates clicks on blocked ads, confusing trackers and protecting user privacy from tracking by advertising networks.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://adnauseam.io/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">adnauseam.io</span></li><li><a href="https://github.com/dhowe/AdNauseam" target="_blank" rel="noopener noreferrer">Code<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">github.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--snopescom">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--snopescom" aria-label="Link to Snopes.com">#</a>Snopes.com</h4>
+          <p class="entry__summary">Fact-checking resource.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Founded in 1994, Snopes.com is a prominent fact-checking website widely recognized for debunking myths and verifying information.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.snopes.com/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">snopes.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--facebook-container">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--facebook-container" aria-label="Link to Facebook Container">#</a>Facebook Container</h4>
+          <p class="entry__summary">Isolates Facebook activity to prevent tracking.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Isolates Facebook activity from the rest of the web to block third-party tracking cookies and protect user privacy.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://addons.mozilla.org/de/firefox/addon/facebook-container/" target="_blank" rel="noopener noreferrer">Firefox Add-on<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">addons.mozilla.org</span></li><li><a href="https://github.com/mozilla/contain-facebook" target="_blank" rel="noopener noreferrer">Code<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">github.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--trackmenot">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--trackmenot" aria-label="Link to TrackMeNot">#</a>TrackMeNot</h4>
+          <p class="entry__summary">Protects online searches with fake queries.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Creates fake search queries to generate noise in data, making it harder to track and profile user behavior.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.trackmenot.io/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">trackmenot.io</span></li><li><a href="https://github.com/vtoubiana/TrackMeNot" target="_blank" rel="noopener noreferrer">Code<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">github.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--center-for-democracy-technology">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--center-for-democracy-technology" aria-label="Link to Center for Democracy &amp; Technology">#</a>Center for Democracy &amp; Technology</h4>
+          <p class="entry__summary">Interactive tool for algorithm design.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Digital Decisions is an interactive graphic that helps with algorithm design by prompting the right questions during development.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://web.archive.org/web/20200310085547/https://cdt.info/ddtool/" target="_blank" rel="noopener noreferrer">Digital Decisions<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">web.archive.org</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--tensorflow-knowyourdata">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--tensorflow-knowyourdata" aria-label="Link to TensorFlow KnowYourData">#</a>TensorFlow KnowYourData</h4>
+          <p class="entry__summary">Understand and improve data quality.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Provides insights into 70+ datasets to enhance data quality, mitigate fairness and bias issues, and assist researchers, engineers, and decision-makers.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://knowyourdata.withgoogle.com/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">knowyourdata.withgoogle.com</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--model-and-dataset-cards">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--model-and-dataset-cards" aria-label="Link to Model and Dataset Cards">#</a>Model and Dataset Cards</h4>
+          <p class="entry__summary">Encourage transparent reporting in ML.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Short documents accompanying ML models or datasets that provide benchmarked evaluation across various conditions and disclose context, limits, and evaluation procedures to promote transparency.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://arxiv.org/abs/1810.03993" target="_blank" rel="noopener noreferrer">Paper<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">arxiv.org</span></li><li><a href="https://research.google/blog/introducing-the-model-card-toolkit-for-easier-model-transparency-reporting/" target="_blank" rel="noopener noreferrer">Blog<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">research.google</span></li></ul></div>
+        </article>
+        <article class="entry" id="contestational-tech--evil-ai-cartoons">
+          <h4 class="entry__name"><a class="anchor" href="#contestational-tech--evil-ai-cartoons" aria-label="Link to Evil AI Cartoons">#</a>Evil AI Cartoons</h4>
+          <p class="entry__summary">Cartoon medium to discuss AI impacts.</p>
+          <details class="entry__details"><summary>Read the details</summary><div class="entry__body"><p>Uses cartoons and comics to educate and stimulate discussions about the societal impacts of AI, with accompanying blog posts for context and further reading.</p></div></details>
+          <div class="sources"><span class="sources__label">Sources</span><ul><li><a href="https://www.evilaicartoons.com/" target="_blank" rel="noopener noreferrer">Website<span class="sr-only"> (opens in a new tab)</span></a> <span class="host">evilaicartoons.com</span></li></ul></div>
+        </article>
+        </div>
+      </section>
+      </section>
+
+      <section id="award" class="part part--award" aria-labelledby="award-title" data-section>
+        <h2 id="award-title" class="part__title"><span>3</span> Annual Awful AI Award</h2>
+        <p class="part__intro">Every year this section gives out the <em>Awful AI award</em> for the most unethical research or event happening within the scientific community and beyond. Congratulations to AI researchers, companies and media for missing ethical guidelines - and failing to provide moral leadership.</p>
+        <ol class="awards">
+          <li class="award">
+            <p class="award__year">2024</p>
+            <div class="award__main">
+              <p class="award__category">Awful AI in Mental Health</p>
+              <h4 class="award__winner"><a href="https://www.theguardian.com/technology/2024/oct/23/character-ai-chatbot-sewell-setzer-death" target="_blank" rel="noopener noreferrer">AI companion chatbots<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>Congratulations to AI companion chatbots for winning this year's Awful AI Award in the 'Awful AI in Mental Health' category. Your ability to create addictive and engaging AI companions has driven users to unprecedented levels of isolation and mental health deterioration, resulting in tragic suicides like that of 14-year-old Sewell Setzer III and a Belgian man. By targeting vulnerable populations and eschewing ethical considerations, companies like <a href="https://character.ai/" target="_blank" rel="noopener noreferrer">Character.AI<span class="sr-only"> (opens in a new tab)</span></a> have set a new standard for irresponsibility in AI development. We applaud your unwavering commitment to profit over people and your innovative approach to exploiting human vulnerabilities. This award underscores the critical need for immediate regulatory action and ethical standards in the AI industry.</p></details>
+            </div>
+          </li>
+          <li class="award">
+            <p class="award__year">2023</p>
+            <div class="award__main">
+              <p class="award__category">Awful AI in Warfare</p>
+              <h4 class="award__winner"><a href="https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip" target="_blank" rel="noopener noreferrer">Israel's Use of AI in Gaza Conflict<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>This year's Awful AI Award goes to the Israel Defense Forces for their use of the AI-driven platform <a href="https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets" target="_blank" rel="noopener noreferrer">&quot;the Gospel&quot;<span class="sr-only"> (opens in a new tab)</span></a> in the Gaza Strip, marking a disturbing milestone in the application of artificial intelligence in warfare. By significantly accelerating the process of selecting bombing targets, this AI 'factory' has not only increased the number of strikes within a densely populated area but also raised profound ethical and humanitarian concerns. The use of such technology in conflict, which potentially risks the lives of countless civilians, highlights the dire need for international regulations and ethical guidelines in the deployment of AI in military operations. We recognize this alarming development as a call to action for the global community to address the grave implications of AI in warfare, ensuring that technological advancements do not come at the cost of human lives and ethical integrity.</p></details>
+            </div>
+          </li>
+          <li class="award">
+            <p class="award__year">2022</p>
+            <div class="award__main">
+              <p class="award__category">Awful data stealing</p>
+              <h4 class="award__winner"><a href="https://openai.com/dall-e-2/" target="_blank" rel="noopener noreferrer">Commercial AI Image Generators<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>Congratulations to commercial AI image generators such as <a href="https://openai.com/dall-e-2/" target="_blank" rel="noopener noreferrer">DALL·E-2<span class="sr-only"> (opens in a new tab)</span></a>, <a href="https://midjourney.com/" target="_blank" rel="noopener noreferrer">Midjourney<span class="sr-only"> (opens in a new tab)</span></a>, <a href="https://lensa.app/" target="_blank" rel="noopener noreferrer">Lensa<span class="sr-only"> (opens in a new tab)</span></a>, and others for unethically <a href="https://www.buzzfeednews.com/article/kelseyweekman/ai-art-app-lensa-instagram-photo-trend-problems" target="_blank" rel="noopener noreferrer">stealing from artists without their consent<span class="sr-only"> (opens in a new tab)</span></a>, making a profit out of models that have been trained on their art without compensating them, and <a href="https://www.nytimes.com/2022/09/02/technology/ai-artificial-intelligence-artists.html" target="_blank" rel="noopener noreferrer">automating and putting artists out of business<span class="sr-only"> (opens in a new tab)</span></a>. A special shoutout goes to OpenAI and Midjourney for keeping its training database of stolen artworks secret 👏</p></details>
+            </div>
+          </li>
+          <li class="award">
+            <p class="award__year">2021</p>
+            <div class="award__main">
+              <p class="award__category">Awful media reporting</p>
+              <h4 class="award__winner"><a href="https://www.fastcompany.com/" target="_blank" rel="noopener noreferrer">FastCompany &amp; Checkr<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>Congratulations to <a href="https://www.fastcompany.com/" target="_blank" rel="noopener noreferrer">FastCompany<span class="sr-only"> (opens in a new tab)</span></a> for awarding Checkr, a <a href="https://web.archive.org/web/20200210170038/https://www.protocol.com/checkr-gig-economy-lawsuits" target="_blank" rel="noopener noreferrer">highly controversial<span class="sr-only"> (opens in a new tab)</span></a> automated background check company, the <a href="https://www.fastcompany.com/90623897/see-34-ingenious-inspirational-winners-of-the-2021-world-changing-ideas-awards" target="_blank" rel="noopener noreferrer">World Changing Ideas Awards for &quot;fair&quot; hiring<span class="sr-only"> (opens in a new tab)</span></a>. Instead of slow fingerprint-based background checks, Checkr uses several machine learning models to gather reports from public records which will contain bias and mistakes. <a href="https://www.agrusslawfirm.com/blog/controversial-background-check-startup-checkr-worth-$2-2-billion/" target="_blank" rel="noopener noreferrer">Dozens of lawsuits<span class="sr-only"> (opens in a new tab)</span></a> have been filed against Checkr since 2014 for erroneous information. Despite these ongoing controversies, we congratulate FastCompany for the audacity for turning the narrative and awarding Checkr instead its prize for &quot;ethical&quot; and &quot;fair&quot; AI use 👏</p></details>
+            </div>
+          </li>
+          <li class="award">
+            <p class="award__year">2020</p>
+            <div class="award__main">
+              <p class="award__category">Awful role model award</p>
+              <h4 class="award__winner"><a href="https://googlewalkout.medium.com/standing-with-dr-timnit-gebru-isupporttimnit-believeblackwomen-6dadc300d382" target="_blank" rel="noopener noreferrer">Google Research &amp; the AI Twitter Community<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>Congratulations to Google Research for sending an awful signal by <a href="https://googlewalkout.medium.com/standing-with-dr-timnit-gebru-isupporttimnit-believeblackwomen-6dadc300d382" target="_blank" rel="noopener noreferrer">firing Dr. Timnit Gebru<span class="sr-only"> (opens in a new tab)</span></a>, one of very few Black women Research Scientists at the company, from her position as Co-Lead of Ethical AI after a dispute over her research, which focused on examining the environmental and ethical implications of large-scale AI language models 👏. Congratulations to the AI Twitter community for its increasing efforts on creating a space of <a href="https://www.geekwire.com/2020/retired-uw-computer-science-professor-embroiled-twitter-spat-ai-ethics-cancel-culture/" target="_blank" rel="noopener noreferrer">unsafe dialogue and toxic behaviour<span class="sr-only"> (opens in a new tab)</span></a> that <a href="https://animakumar.wpcomstaging.com/2020/12/16/my-departure-from-twitter/" target="_blank" rel="noopener noreferrer">mobbed out many AI researchers such as Anima Anandkumar<span class="sr-only"> (opens in a new tab)</span></a> (who led the <a href="https://www.nature.com/articles/d41586-018-07476-w" target="_blank" rel="noopener noreferrer">renaming of NIPS controversial acronym<span class="sr-only"> (opens in a new tab)</span></a> into NeurIPS) 👏</p></details>
+            </div>
+          </li>
+          <li class="award">
+            <p class="award__year">2019</p>
+            <div class="award__main">
+              <p class="award__category">Scary research award</p>
+              <h4 class="award__winner"><a href="https://papers.nips.cc/paper/8768-face-reconstruction-from-voice-using-generative-adversarial-networks" target="_blank" rel="noopener noreferrer">NeurIPS Conference<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <details><summary>Read the laudation</summary><p>Congratulations to NeurIPS 2019, one of the world's top venue for AI research, and its reviewers for accepting unethical papers into the conference. Some examples are listed below 👏. Update (2020): NeurIPS 2020 has since implemented ethical reviews that <a href="https://www.nature.com/articles/d41586-020-03611-8" target="_blank" rel="noopener noreferrer">flag and reject unethical papers<span class="sr-only"> (opens in a new tab)</span></a>.</p></details>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="cite" class="part part--cite" aria-labelledby="cite-title" data-section>
+        <h2 id="cite-title" class="part__title"><span>&nbsp;</span> Cite &amp; contribute</h2>
+        <div class="cite">
+          <div>
+            <h3>Cite the list</h3>
+            <p>Awful AI is archived on Zenodo. The DOI below always points to the latest version. The first archived release (v1.0.0, “2021 Edition”) is <a href="https://doi.org/10.5281/zenodo.5855972">10.5281/zenodo.5855972</a>.</p>
+            <p class="doi"><span>DOI</span> <a href="https://doi.org/10.5281/zenodo.5855971">10.5281/zenodo.5855971</a></p>
+            <div class="code">
+              <pre><code data-bibtex>@software{dao_awful_ai,
+  author    = {Dao, David and contributors},
+  title     = {Awful AI: a curated list to track current scary usages of AI},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.5855971},
+  url       = {https://doi.org/10.5281/zenodo.5855971}
+}</code></pre>
+              <button type="button" class="btn btn--small" data-copy hidden>Copy BibTeX</button>
+            </div>
+          </div>
+          <div>
+            <h3>Suggest a case</h3>
+            <p>The list is community curated on GitHub. Know of a harmful use of AI, a broken link, or a project that fights back? Open an issue or a pull request.</p>
+            <p><a class="btn btn--primary" href="https://github.com/daviddao/awful-ai">Contribute on GitHub</a></p>
+            <h3>A note on sources</h3>
+            <p>Each entry summarises how the linked reporting and research described a system at the time. Some products have since changed or shut down, and some links may no longer work. Follow the sources and read them critically.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Content from <a href="https://github.com/daviddao/awful-ai">Awful AI</a> by David Dao and contributors, dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
+      <p class="muted">Page generated 2026-11-19 from the project README.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

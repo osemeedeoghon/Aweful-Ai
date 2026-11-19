@@ -1,0 +1,34 @@
+{
+  "_about": "Link replacements applied on top of content/awful-ai.md at build time, so they survive `npm run sync`. Map an original URL to a new URL, or to null to drop that link. Verified 2026-11-19; see link-report.md.",
+  "replace": {
+    "http://www.predpol.com/": "https://web.archive.org/web/20191224114003/http://www.predpol.com/",
+    "https://cambridgeanalytica.org/": "https://web.archive.org/web/20180224094452/https://cambridgeanalytica.org/",
+
+    "https://abcnews.go.com/Technology/wireStory/researchers-amazon-face-detection-technology-shows-bias-60630589?cid=social_twitter_abcn": "https://web.archive.org/web/20191130054555/https://abcnews.go.com/Technology/wireStory/researchers-amazon-face-detection-technology-shows-bias-60630589",
+    "https://www.nabla.com/blog/gpt-3/": "https://web.archive.org/web/20201027122018/https://www.nabla.com/blog/gpt-3/",
+    "https://motherboard.vice.com/en_us/article/7x3g4x/pentagon-wants-to-predict-anti-trump-protests-using-social-media-surveillance": "https://web.archive.org/web/20190426030217/https://motherboard.vice.com/en_us/article/7x3g4x/pentagon-wants-to-predict-anti-trump-protests-using-social-media-surveillance",
+    "https://www.iarpa.gov/index.php/newsroom/iarpa-in-the-news/2015/461-the-embers-project-can-predict-the-future-with-twitter": "https://web.archive.org/web/20190826100241/https://www.iarpa.gov/index.php/newsroom/iarpa-in-the-news/2015/461-the-embers-project-can-predict-the-future-with-twitter",
+    "https://www.deepfakes.club/": null,
+    "https://corporate.exxonmobil.com/News/Newsroom/News-releases/2019/0305_ExxonMobil-to-increase-accelerate-Permian-output-to-1-million-barrels-per-day-by-2024": "https://web.archive.org/web/20191117222339/https://corporate.exxonmobil.com/News/Newsroom/News-releases/2019/0305_ExxonMobil-to-increase-accelerate-Permian-output-to-1-million-barrels-per-day-by-2024",
+    "http://www.globaltimes.cn/content/1149168.shtml": "https://web.archive.org/web/20200111035407/http://www.globaltimes.cn:80/content/1149168.shtml",
+    "https://www.youtube.com/watch?v=4OqmoHBvB0c": null,
+    "https://github.com/StanfordMLGroup/blm": "https://web.archive.org/web/20200828071036/https://github.com/stanfordmlgroup/blm",
+    "https://cdt.info/ddtool/": "https://web.archive.org/web/20200310085547/https://cdt.info/ddtool/",
+    "https://www.protocol.com/checkr-gig-economy-lawsuits": "https://web.archive.org/web/20200210170038/https://www.protocol.com/checkr-gig-economy-lawsuits",
+
+    "http://reports.weforum.org/digital-transformation/wp-content/blogs.dir/94/mp/files/pages/files/white-paper-2017-dti-oil-gas.pdf": "https://web.archive.org/web/20200430224030/http://reports.weforum.org/digital-transformation/wp-content/blogs.dir/94/mp/files/pages/files/white-paper-2017-dti-oil-gas.pdf",
+    "https://ec.europa.eu/research/infocentre/article_en.cfm?artid=49726": "https://web.archive.org/web/20200118014839/https://ec.europa.eu/research/infocentre/article_en.cfm?artid=49726",
+    "https://blog.openai.com/adversarial-example-research/": "https://web.archive.org/web/20190306215358/https://blog.openai.com/adversarial-example-research/",
+    "https://www.sensetime.com/intelligentVideo/84": "https://web.archive.org/web/20190319194444/https://www.sensetime.com/intelligentVideo/84",
+    "http://www.equivant.com/challenges/supervision-and-compliance-monitoring": "https://web.archive.org/web/20190210222444/http://www.equivant.com:80/challenges/supervision-and-compliance-monitoring",
+
+    "https://tvm.ai/2018/10/09/ml-in-tees.html": "https://tvm.apache.org/2018/10/09/ml-in-tees",
+    "https://ai.googleblog.com/2020/07/introducing-model-card-toolkit-for.html": "https://research.google/blog/introducing-the-model-card-toolkit-for-easier-model-transparency-reporting/",
+    "https://openai.com/blog/improving-factual-accuracy/": "https://openai.com/index/webgpt/",
+    "https://cs.nyu.edu/trackmenot/": "https://www.trackmenot.io/",
+    "https://prisma-ai.com/lensa": "https://lensa.app/",
+    "https://www.anyvision.co/": "https://oosto.com/",
+    "https://github.com/dreamnettech/dreampower": "https://github.com/sukebenet/dreampower",
+    "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.302.323&rep=rep1&type=pdf": "https://web.archive.org/web/20230526095432/https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.302.323&rep=rep1&type=pdf"
+  }
+}

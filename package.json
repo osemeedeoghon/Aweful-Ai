@@ -1,0 +1,15 @@
+{
+  "name": "awful-ai-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for the Awful AI curated list.",
+  "type": "module",
+  "scripts": {
+    "sync": "curl -fsSL https://raw.githubusercontent.com/daviddao/awful-ai/master/README.md -o content/awful-ai.md",
+    "build": "node scripts/build.mjs",
+    "update": "npm run sync && npm run build",
+    "serve": "npx --yes serve@14.2.4 public -l 4173",
+    "check-links": "node scripts/check-links.mjs"
+  },
+  "license": "CC0-1.0"
+}
